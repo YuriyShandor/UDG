@@ -581,15 +581,14 @@ body {
 
 .who-we {
   width: 100%;
-  height: 1700px;
 }
 
 .two-section-in-one:before {
   content: "";
   position: absolute;
   width: 200%;
-  height: 650px;
-  top: 20%;
+  height: 620px;
+  top: 14.7%;
   left: -50%;
   z-index: -1;
   background: #f3fafa;
@@ -689,6 +688,18 @@ body {
     display: none;
   }
 
+  .who-we:before {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 610px;
+    top: 3.7%;
+    left: -50%;
+    z-index: -1;
+    background: #f3fafa;
+    transform: rotate(17deg);
+  }
+
   .who-we-are {
     display: flex;
     flex-direction: column;
@@ -713,6 +724,10 @@ body {
 }
 
 @media screen and (max-width: 767px) {
+  .who-we:before {
+    display: none;
+  }
+
   .section-title {
     display: flex;
 
@@ -770,12 +785,197 @@ body {
   }
 }
 
-@media screen and (max-width: 1199px) {
+.our-progect {
+  width: 100%;
+  margin-top: 160px;
+}
 
+.our-projects-content {
+  display: flex;
+  justify-content: space-between;
+
+  .section-title {
+    margin-left: 30px;
+  }
+
+  .read-more {
+    margin-left: 95px;
+    margin-top: 45px;
+  }
+
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 730px;
+    margin-right: 30px;
+
+    .project_1 {
+      background: url(../img/project_01.jpg) no-repeat center / cover;
+    }
+
+    .project_2 {
+      background: url(../img/project_02.jpg) no-repeat center / cover;
+    }
+
+    .project_3 {
+      background: url(../img/project_03.jpg) no-repeat center / cover;
+      margin-top: 30px;
+    }
+
+    .project_4 {
+      background: url(../img/project_04.jpg) no-repeat top center / cover;
+      margin-top: 30px;
+    }
+
+    .project {
+      width: 350px;
+      height: 350px;
+      transition: transform 0.5s;
+
+      .project__content {
+        padding-left: 37px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+
+      .project__title {
+        font-family: Acrom;
+        font-size: 28px;
+        font-weight: 800;
+        color: #fff;
+        width: 265px;
+        text-transform: uppercase;
+        margin: 0;
+        margin-bottom: 20px;
+      }
+
+      .project__discr {
+        font-size: 18px;
+        font-weight: 300;
+        color: #fff;
+        margin: 0;
+        display: none;
+      }
+
+      .project__read-more {
+        margin-top: 35px;
+        width: 109px;
+        height: 26px;
+        border-radius: 3px;
+        background: #439c92;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        font-family: Acrom;
+        font-size: 13px;
+        text-transform: uppercase;
+        font-weight: 800;
+        color: #fff;
+      }
+      }
+
+      &:hover {
+        transform: scale(1.05);
+
+        .project__content {
+          background-color: rgba(0, 77, 64, 0.75);
+
+          .project__title {
+            text-decoration: underline;
+            text-decoration-color: #7dbe1f;
+          }
+
+          .project__discr {
+            display: block;
+          }
+
+          .project__read-more {
+            background: transparent;
+            border: 1px solid #439c92;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .our-progect {
+    margin-top: 50px;
+  }
+
+  .our-projects-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .section-title {
+      margin-left: 0;
+    }
+
+    .read-more {
+      margin-left: 63px;
+      margin-bottom: 50px;
+    }
+
+    .projects {
+      width: 720px;
+      margin-right: 0;
+
+      .project_3, .project_4  {
+        margin-top: 20px;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 767px) {
+  .our-progect {
+    margin-top: 25px;
+  }
 
+  .our-projects-content {
+
+
+    .read-more {
+      margin-left: 0;
+      margin-top: 30px;
+    }
+
+    .projects {
+      display: flex;
+      flex-direction: column;
+      width: auto;
+
+      .project_2, .project_3, .project_4  {
+        margin-top: 30px;
+      }
+
+      .project {
+        width: 290px;
+        height: 290px;
+        transition: transform 0.5s;
+
+        .project__content {
+          padding-left: 30px;
+
+        .project__title {
+          font-size: 20px;
+          width: 200px;
+          margin-bottom: 30px;
+        }
+
+        .project__discr {
+          font-size: 14px;
+        }
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 1199px) {
