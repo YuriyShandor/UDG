@@ -831,7 +831,8 @@ body {
     .project {
       width: 350px;
       height: 350px;
-      transition: transform 0.5s;
+      transition-property: all;
+      transition-duration: 0.5s;
 
       .project__content {
         padding-left: 37px;
@@ -880,6 +881,7 @@ body {
 
       &:hover {
         transform: scale(1.05);
+        box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
 
         .project__content {
           background-color: rgba(0, 77, 64, 0.75);
@@ -978,12 +980,107 @@ body {
   }
 }
 
-@media screen and (max-width: 1199px) {
+.section-numbers {
+  width: 100%;
+  height: 339px;
+  background: url(../img/numbers-bg.jpg) no-repeat center / cover;
+  margin-top: 110px;
+  position: relative;
+}
 
+.numbers-inside {
+  position: absolute;
+  background-color: rgba(0, 77, 64, 0.75);
+  height: 100%;
+  width: 100%;
+  top: 0;
+}
+
+.numbers {
+  width: inherit;
+  height: 339px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .number-cont {
+    height: 200px;
+    width: 282px;
+    border-left: 3px solid #8dc63f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+    .number-title {
+      font-family: Acrom;
+      font-size: 75px;
+      font-weight: 800;
+      color: #fff;
+      margin: 0;
+    }
+
+    .number-discr {
+      font-size: 19px;
+      font-weight: 300;
+      color: #fff;
+      width: 220px;
+      margin: 0;
+      margin-top: 20px;
+    }
+
+    &:last-child {
+      border-right: 3px solid #8dc63f;
+    }
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .section-numbers {
+    margin-top: 50px;
+  }
+
+  .numbers {
+    justify-content: space-between;
+
+    .number-cont {
+      width: auto;
+      border: none;
+
+      &:nth-child(2) {
+        border-right: 3px solid #8dc63f;
+        border-left: 3px solid #8dc63f;
+      }
+
+      &:last-child {
+        border-right: none;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 767px) {
+  .section-numbers {
+    height: 614px;
+    margin-top: 56px;
+    border-radius: 5px;
+  }
 
+  .numbers {
+    height: 614px;
+    flex-direction: column;
+
+    .number-cont {
+      width: auto;
+
+      &:nth-child(2) {
+        border: none;
+        border-bottom: 3px solid #8dc63f;
+        border-top: 3px solid #8dc63f;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 1199px) {
