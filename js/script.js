@@ -43,4 +43,8 @@ $(document).ready(function() {
     $(".slider-block").removeClass("slider-block_hidden");
     $(".rectangls").removeClass("rectangls_hidden");
   });
+
+  $('.name-input').on('click', function() {
+    $(this).toggleClass('name-input_click');
+  });
 });
