@@ -1436,12 +1436,186 @@ body {
   }
 }
 
-@media screen and (max-width: 1199px) {
 
+@media screen and (max-width: 1199px) {
+  #contacts {
+    height: 840px;
+  }
+
+  .contact-write {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 69px;
+  }
+
+  .contact-block {
+    margin-left: 0;
+
+
+    .contact-item {
+      .contact-info {
+        text-decoration: none;
+      }
+
+
+      &:nth-child(3) {
+        .contact-info {
+          font-weight: 700;
+        }
+      }
+
+      &:nth-child(4) {
+        .contact-info {
+          font-weight: 700;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .write-block {
+    margin-right: 0;
+    margin-top: 40px;
+
+    .section-title {
+      margin-bottom: 70px;
+      margin-left: 80px;
+    }
+
+    .send-massage {
+      margin-top: 65px;
+    }
+  }
 }
 
 @media screen and (max-width: 767px) {
+  #contacts {
+    height: 605px;
+    margin-top: 40px;
+  }
 
+  .contact-write {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 15px;
+  }
+
+  .contact-block {
+    margin-left: 0;
+
+    .section-title {
+      margin-bottom: -10px;
+    }
+
+    .contact-item {
+      margin-left: 0;
+      margin-top: 40px;
+
+      .contact-info {
+        margin-left: 20px;
+      }
+
+      .contact-info__link {
+        color: #439c92;
+      }
+    }
+  }
+
+  .write-block {
+    margin-top: 25px;
+
+    .section-title {
+      margin: 0;
+      margin-right: auto;
+      margin-bottom: 50px;
+
+      .rectangle-title {
+        visibility: visible;
+      }
+    }
+
+    .name-email {
+      width: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-bottom: 0;
+
+      .contact__input {
+        width: 290px;
+        margin-bottom: 30px;
+      }
+    }
+
+    .massage {
+      .contact__input {
+        width: 290px;
+      }
+    }
+
+    .send-massage {
+      margin-top: 20px;
+      width: 100%;
+      height: 46px;
+      font-size: 16px;
+      border-radius: 3px;
+      transition: opacity 0.5s;
+
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+  }
+
+  .name-input {
+    position: relative;
+
+    .contact__input {
+      outline: none;
+      height: 30px;
+      border: none;
+      background: transparent;
+      border-bottom: 1px solid #989b9c;
+      font-size: 17px;
+      font-weight: 600;
+      color: #414042;
+
+      &::placeholder {
+        font-size: 14px;
+        font-weight: 400;
+        color: #989b9c;
+        text-transform: uppercase;
+      }
+    }
+
+    .contact__input_title {
+      position: absolute;
+      top: -20px;
+      font-size: 10px;
+      font-weight: 400;
+      color: #989b9c;
+      text-transform: uppercase;
+      visibility: hidden;
+    }
+  }
+
+  .name-input_click {
+    .contact__input_title {
+      visibility: visible;
+    }
+
+    .contact__input {
+      border-bottom: 2px solid #439c92;
+
+      &::placeholder {
+      visibility: hidden;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 1199px) {
