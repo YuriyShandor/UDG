@@ -7,13 +7,11 @@
   <title>UDG</title>
 
   <link rel="stylesheet" href="scss/normalize.css">
-  <link rel="stylesheet" href="scss/fm.revealator.jquery.css">
   <link rel="stylesheet" href="scss/slick.css">
   <link rel="stylesheet" href="scss/slick-theme.css">
   <link rel="stylesheet" href="scss/main.min.css">
 
   <script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
-  <script src="js/fm.revealator.jquery.js" type="text/javascript"></script>
   <script src="js/jquery.nice-select.js" type="text/javascript"></script>
   <script src="js/slick.js" type="text/javascript"></script>
   <script src="js/script.js" type="text/javascript"></script>
@@ -31,11 +29,11 @@
       <div class="header-menu">
         <div class="menu">
           <a href="" class="menu-item">Home</a>
-          <a href="" class="menu-item">About us</a>
-          <a href="" class="menu-item">Project</a>
+          <a href="#about_us" class="menu-item">About us</a>
+          <a href="#pro_jects" class="menu-item">Project</a>
           <a href="" class="menu-item">Clients</a>
           <a href="" class="menu-item">Partners</a>
-          <a href="" class="menu-item">News</a>
+          <a href="#news" class="menu-item">News</a>
         </div>
 
         <div class="select-box">
@@ -63,12 +61,12 @@
             <div class="navbar-inner">
               <ul class="nav">
                 <li class="nav-item"><a class="nav-link" href="">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="">About us</a></li>
-                <li class="nav-item"><a class="nav-link" href="">Project</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about_us">About us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#pro_jects">Project</a></li>
                 <li class="nav-item"><a class="nav-link" href="">Clients</a></li>
                 <li class="nav-item"><a class="nav-link" href="">Partners</a></li>
-                <li class="nav-item"><a class="nav-link" href="">News</a></li>
-                <li class="nav-item"><a class="nav-link" href="">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="#news">News</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contacts">Contact</a></li>
               </ul>
             </div>
         </nav>
@@ -110,7 +108,7 @@
   </header>
 
   <div class="two-section-in-one">
-    <section class="who-we">
+    <section class="who-we" id="about_us">
       <div class="container">
         <div class="who-we-are">
           <div class="section-title">
@@ -134,7 +132,7 @@
       </div>
     </section>
 
-    <section class="our-progect">
+    <section class="our-progect" id="pro_jects">
       <div class="container">
         <div class="our-projects-content">
           <div class="see-portfolio">
@@ -209,7 +207,7 @@
     </div>
   </section>
 
-  <section>
+  <section id="news">
     <div class="container">
       <div class="new-content">
         <div class="section-title">
@@ -307,8 +305,8 @@
 
           <form class="name-email" action="index.html" method="post">
             <div class="name-input">
-              <span class="contact__input_title">Yuor name</span>
-              <input type="text" class="contact__input" name="" value="" placeholder="Yuor name">
+              <span class="contact__input_title">Your name</span>
+              <input type="text" class="contact__input" name="" value="" placeholder="Your name">
             </div>
             <div class="name-input">
               <span class="contact__input_title">email</span>
