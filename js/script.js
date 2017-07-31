@@ -44,7 +44,8 @@ $(document).ready(function() {
     $(".rectangls").removeClass("rectangls_hidden");
   });
 
-  $('.name-input').on('click', function() {
-    $(this).toggleClass('name-input_click');
+  $('.name-input').click(function(){
+    $('.name-input').removeClass('name-input_click');
+    $(this).addClass('name-input_click');
   });
 });
